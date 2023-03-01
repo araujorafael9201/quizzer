@@ -1,0 +1,32 @@
+{
+  "name": "quizzer",
+  "version": "1.0.0",
+  "description": "Quiz Game",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araujorafael9201/quizzer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/araujorafael9201/quizzer/issues"
+  },
+  "homepage": "https://github.com/araujorafael9201/quizzer#readme",
+  "dependencies": {
+    "next": "^13.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.14.2",
+    "@types/react": "18.0.28",
+    "typescript": "4.9.5"
+  }
+}
