@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 5%;
+    margin: 0 5%;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    margin: 2% 0;
+}

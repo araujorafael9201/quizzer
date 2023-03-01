@@ -1,0 +1,25 @@
+.navBar {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blue;
+}
+
+.brand {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navButtons {
+    display: flex;
+    list-style: none;
+}
+
+.navItem {
+    margin: 0 50%;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+}
