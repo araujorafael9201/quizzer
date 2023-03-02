@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3%;
+
+}
+
+.form {
+    display: grid;
+    grid-template-areas: 
+        "fgroup fgroup"
+        "subbtn subbtn";
+    
+    gap: 2%;
+    margin-top: 3%;
+    width: 60%;
+
+}
+
+.questionForm {
+    display: grid;
+    grid-template-rows: 1.5fr 4fr 2fr;
+    width: 60%;
+}
+
+.formGroup {
+    margin: 1% 0;
+}
+
+.input {
+    width: 100%;
+    padding: 1.5%;;
+}
+
+.correct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 1% 0;
+}
+
+.correct > h3 {
+    white-space: nowrap;
+    margin-right: 1%;
+}
+
+.btnSubmit {
+    padding: 2%;
+    grid-area: subbtn;
+    margin-top: 2%;
+}
+
+.btnSubmit:hover {
+    cursor: pointer;
+}
