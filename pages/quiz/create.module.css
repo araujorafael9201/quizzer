@@ -55,3 +55,7 @@
 .btnSubmit:hover {
     cursor: pointer;
 }
+
+.title {
+    font-size: 3rem;
+}

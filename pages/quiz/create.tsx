@@ -76,11 +76,22 @@ export default function CreateQuiz(props) {
     return;
   }
 
-  function saveQuiz() {
+  async function saveQuiz() {
     // Save quiz
+    const res: Response = await fetch("/api/quiz/create", {
+      method: "POST",
+      mode: "cors",
+      body: JSON.stringify(data),
+    });
 
-    console.log(data);
-    Router.push("/");
+    if (res.status == 201) {
+      Router.push("/");
+      return;
+    }
+
+    res.json().then((r) => {
+      alert(r.message);
+    });
   }
 
   function generateInput() {
@@ -188,7 +199,7 @@ export default function CreateQuiz(props) {
     if (formStep == 5) {
       return (
         <>
-          <h1>Finished!</h1>
+          <h1 className={styles.title}>Finished!</h1>
           <QuizConfirm quiz={data} />
           <button className={styles.btnSubmit} onClick={saveQuiz}>
             Confirm
