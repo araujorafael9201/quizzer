@@ -1,9 +1,8 @@
 import Router from "next/router";
 import { useState, useRef } from "react";
 
-import QuizConfirm from "../../components/Quiz/QuizConfirm";
-
 import { validateQuizTitle } from "../../utils/validateData";
+import QuizConfirm from "../../components/Quiz/QuizConfirm";
 
 import styles from "./create.module.css";
 

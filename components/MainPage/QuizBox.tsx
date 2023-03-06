@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "./QuizBox.module.css";
 
 export default function QuizBox(props) {
-  console.log(props.quiz);
   return (
     <li>
       <div className={styles.container}>
