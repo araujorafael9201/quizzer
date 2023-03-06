@@ -1,11 +1,13 @@
 import Image from "next/image";
 
+import Link from "next/link";
+
 import styles from "./QuizBox.module.css";
 
 export default function QuizBox(props) {
   return (
     <li>
-      <div className={styles.container}>
+      <Link className={styles.container} href={`/quiz/${props.quiz.id}`}>
         <Image
           className={styles.quizImg}
           alt={props.quiz.title}
@@ -17,7 +19,7 @@ export default function QuizBox(props) {
           <h3 className={styles.quizTitle}>{props.quiz.title}</h3>
           <p className={styles.quizDescription}>{props.quiz.description}</p>
         </div>
-      </div>
+      </Link>
     </li>
   );
 }

@@ -1,7 +1,7 @@
 import HotQuizList from "../components/MainPage/HotQuizList";
 import OptionsTab from "../components/MainPage/OptionsTab";
 
-import { getQuizzes } from "../db/functions";
+import { getMainQuizzes } from "../db/functions";
 
 import styles from "./index.module.css";
 
@@ -22,7 +22,7 @@ export default function MainPage(props) {
 
 export async function getStaticProps() {
   // Get Hot Quizzes from DB
-  const results = await getQuizzes();
+  const results = await getMainQuizzes();
   let hotQuizzes = Object.values(JSON.parse(JSON.stringify(results)));
   return {
     props: {

@@ -6,6 +6,9 @@
     border: 1px solid black;
     margin-bottom: 2%;
     border-radius: 15px;
+
+    text-decoration: none;
+    color: black;
 }
 
 .quizImg {
@@ -19,6 +22,7 @@
 .quizContent {
     padding: 3%;
     padding-top: 1.5%;
+    
 }
 
 .quizTitle {
